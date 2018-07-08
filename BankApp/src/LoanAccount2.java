@@ -11,6 +11,7 @@ public class LoanAccount
 		
 	
 		this.id=id;
+		this.id=id;
 	}
 
 }
