@@ -8,6 +8,9 @@ public class LoanAccount
 		this.accNo=accNo;
 		this.accBalance=accBalance;
 		this.id=id;
+		
+	
+		this.id=id;
 	}
 
 }
