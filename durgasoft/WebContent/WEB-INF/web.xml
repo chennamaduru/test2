@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>durgasoft</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+<serlet>
+<display-name>HeadersServlet</display-name>
+<servlet-name>HeadersServlet</servlet-name>
+<servlet-class>com.durgasoft.HeadersServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>HeadersServlet</servlet-name>
+<url-pattern>/headers</url-pattern>
+</servlet-mapping>
+</web-app>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<display-name>parametersapp</display-name>
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+<welcome-file>index.htm</welcome-file>
+<welcome-file>index.jsp</welcome-file>
+<welcome-file>default.html</welcome-file>
+<welcome-file>default.htm</welcome-file>
+<welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+<servlet>
+<description></description>
+<display-name>RegistrationServlet</display-name>
+<servlet-name>RegistrationServlet</servlet-name>
+<servlet-class>com.durgasoft.RegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RegistrationServlet</servlet-name>
+<url-pattern>/reg</url-pattern>
+</servlet-mapping>
+</web-app>

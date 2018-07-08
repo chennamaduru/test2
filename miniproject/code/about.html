@@ -1,0 +1,113 @@
+
+
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript">
+
+	 function validate()
+      {
+	    var u=document.productForm.loginid.value;
+		var t1=document.productForm.text1.value;
+		if(u=="")
+  		{
+   		 alert( "Enter loginid Here" );
+    	  document.productForm.loginid.focus() ;
+    	  return false;
+        }
+		if(t1=="")
+  		{
+   		 alert( "write your suggestions Here" );
+    	  document.productForm.text1.focus() ;
+    	  return false;
+        }
+		}
+		function validate2()
+		{
+		var u2=document.complientForm.loginid.value;
+		var t2=document.complientForm.text2.value;
+		if(u2=="")
+  		{
+   		  alert( "Enter loginid Here" );
+    	  document.complientForm.loginid.focus() ;
+    	  return false;
+        }
+		if(t2=="")
+  		{
+   		  alert( "write your compliants Here" );
+    	  document.complientForm.text2.focus() ;
+    	  return false;
+        }
+     }
+</script>
+	</head>
+<BODY background="images\ooo.jpg"><div class="corner">Follow us on:<a href="http:/www.facebook.com" target="_blank"><img src="images\fb.png"></a>&nbsp;<a href="http:/www.twitter.com"target="_blank"><img src="images\tw.png "></a></div>
+<div id="img_1">
+   <IMG SRC="images\header.png" ></div>
+    <div id="nav1">
+		   <nav class="nav2">
+			<div class="menu">
+			<li><a href="index.html"><img src="images\home3.png">Home</a></li> 
+			<li><a href="confirm.html"><img src="images\registration.png">Registration</a></li> 
+			<li><a href="Eventgallery.html"><img src="images\gallery1.png">Eventgallery</a></li>
+			<li><a href="about.html"><img src="images\about.png">About Us</a></li>     
+		   </div>
+		   </nav> 
+	</div>
+	<div  class="upload_pic">
+	      <font size="5pt"  color="pink">
+	            <p align="center"> Thanks for using this mail for your communication. We are glad to provide wide features along with this mail,if any suggestions and complaints
+                   <img src="images\logo.gif">	              
+				  </p>
+           </font> 
+           		   
+	</div>
+<div  class="upload_pic">
+      <form align="center" method="post"  name="productForm"  ENCTYPE="multipart/form-data" action="complient.jsp"  onSubmit="return validate()" >
+          <table style="color:white;padding-left:20%;margin-top:-3%">
+		       <tr align="center">
+			   <th align="center" colspan="2" >For Suggestions</th>
+			   </tr>
+			  <tr align="center">
+			   <td align="center">loginid:</td>
+			   <td align="center"><input type="text" name="loginid" size="25"  placeholder=" login id.."></td>
+			   </tr>
+			   <tr align="center">
+			   
+			   <td colspan="2"><textarea cols="30" rows="7" name="text1"></textarea></td>
+			   </tr>
+			   <tr align="center"><td><input type="submit" value="Submit"></td></tr>
+           </table>		  
+        </form>
+		
+	</div>	
+	<div  class="upload_pic">
+      <form align="center" method="post"  name="complientForm"  action="complient.jsp"  onSubmit="return validate2()" >
+          <table style="color:white;padding-left:60%;margin-top:-21%">
+		       <tr align="center">
+			   <th align="center" colspan="2" >For Complients</th>
+			   </tr>
+			  <tr align="center">
+			   <td align="center">loginid:</td>
+			   <td align="center"><input type="text" name="loginid" size="25"  placeholder=" login id.."></td>
+			   </tr>
+			   <tr align="center">
+			   
+			   <td colspan="2"><textarea cols="30" rows="7" name="text2"></textarea></td>
+			   </tr>
+			   <tr align="center"><td><input type="submit" value="Submit"></td></tr>
+           </table>		  
+        </form>
+		
+	</div>
+</body>
+</html>		
+				
+				
+				
+				
+				
+				
+				
+				
+				

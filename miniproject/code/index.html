@@ -1,0 +1,76 @@
+<HTML>
+   <HEAD>
+     <TITLE>MY PAGE</TITLE>
+     <link rel="icon" type="image/png" href="images/ti.png" />	
+	 <link rel="stylesheet" href="style.css" type="text/css" />
+	 <script type="text/javascript">
+function validate()
+{
+  var u=document.form1.loginid.value;
+  if(u == "")
+  {
+  alert("enter valid login id...");
+       	 document.form1.loginid.focus();
+
+  return false;
+  }
+  var p=document.form1.pass.value;
+  if(p=="")
+  {
+  alert("enter valid password...");
+    
+  return false;
+  }
+}
+
+
+</script>
+   </HEAD>
+<BODY background="images\ooo.jpg"><div class="corner">Like us on:<a href="http:/www.facebook.com" target="_blank"><img src="images\fb.png"></a>&nbsp;<a href="http:/www.twitter.com"target="_blank"><img src="images\tw.png "></a></div>
+<div id="img_1">
+   <IMG SRC="images\header.png" /></div>
+    <div id="nav1">
+		   <nav class="nav2">
+			<div class="menu">
+			<li><a href="index.html"><img src="images\home3.png">Home</a></li> 
+			<li><a href="confirm.html"><img src="images\registration.png">Registration</a></li> 
+			<li><a href="Eventgallery.html"><img src="images\gallery1.png">Eventgallery</a></li>
+			<li><a href="about.html"><img src="images\about.png">About Us</a></li>     
+		   </div>
+		   </nav> 
+	</div>
+<div class="scrolling"><marquee direction="left" style="color:#66ff00">Welcome to Login page...</marquee>
+</div>
+		
+<div class="middle_logintable">
+<form name="form1" method="post" action="verify.jsp" onSubmit="return validate()">
+						<table  width="350" style="border-radius:10px;box-shadow:5px 5px 5px 5px #ccc;"  bgcolor="gray" height="150">
+						  <tr>
+						  <td align="center" style="color:white;">LOGIN ID:&nbsp;<input type="text" name="loginid" size="25"  placeholder=" login id.."> </td>
+						  </tr>
+						  <tr>
+						  <td align="center" style="color:white;" >PASSWORD:<input type="password" name="pass" size="25" placeholder="password.."> </td>
+						  </tr>
+						  <tr>
+						  <td align="center"><input type="submit" value="Submit" style="font-size:15;background-color:orange;border-radius:10px;" />&nbsp;&nbsp;
+						 <input type="reset" value="Reset" style="font-size:15;background-color:orange;border-radius:10px;border-radius:10px;" />  </td>
+						  </tr>
+						  <tr><td><a href="forgot.html" style="color:black;" >Forgot LoginId/password...!!</a></td></tr>
+						</table>
+		
+</form>
+</div>
+<div class="tag_img"> 
+    <img src="images\tag.png" />
+	<div class="tag_text">
+	     <h3 style="font-family:Matura MT Script Capitals"><u>Day specials</u></h3><br>
+		 <table><tr><td>
+		 <h4>Welcome to communication and message      <br>passing mail...
+		 </td></tr>
+		 </table>
+	</div>
+ </div>
+ <div class="slide_imgs"> <img src="light1.png"  width="55%" height="60%">
+ 
+</BODY>
+   </HTML>

@@ -1,0 +1,114 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript">
+function validate()
+{
+  var r=document.myform.rollno.value;
+   var n=document.myform.fname.value;
+   var p=document.myform.pass.value;
+   var rp=document.myform.repass.value;
+   var ph=document.myform.phoneno.value;
+   var d=document.myform.dd.value;
+   var m=document.myform.mm.value;
+   var y=document.myform.yyyy.value;
+
+   
+  if(r==""||n==""||p==""||rp==""||ph=="")
+  {
+  alert("fill specified fields...");
+  return false;
+  }
+  if(p!=rp)
+  {
+  alert(" password fields dosn't match ...");
+    
+  return false;
+  }
+     if(d>31||d<=0)
+   {
+   alert("invalid date");
+   return false;
+   }
+   if(m>12 || m<=0)
+   {
+   alert("invalid month ");
+   return false;
+   }
+   if(y<1970||y>=2015)
+   {alert("invalid year")
+   return false;
+   }
+   
+}
+</script>
+	</head>
+<BODY background="images\ooo.jpg"><div class="corner"><a href="http:/www.facebook.com" target="_blank"><img src="images\fb.png"></a>&nbsp;<a href="http:/www.twitter.com"target="_blank"><img src="images\tw.png "></a></div>
+<div id="img_1">
+   <IMG SRC="images\header.png" ></div>
+    <div id="nav1">
+		   <nav class="nav2">
+			<div class="menu">
+			<li><a href="index.html"><img src="images\home3.png">Home</a></li> 
+			<li><a href="confirm.html"><img src="images\registration.png">Registration</a></li> 
+			<li><a href="Eventgallery.html"><img src="images\gallery1.png">Eventgallery</a></li>
+			<li><a href="about.html"><img src="images\about.png">About Us</a></li>     
+		   </div>
+		   </nav> 
+	</div>
+<div class="fac_regtable">
+ <form class="form-horizontal" name="myform"  method="post" action="datastore.jsp" onsubmit="return validate()">
+                    <table align="" width="800" bgcolor="#ccff99" height="400" style="border-radius:10px;box-shadow:5px 5px 5px 5px #ccc;"  >
+                      <tr align="center"> 
+                        <td align="left" height="20"></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="center" colspan="2"><font color="#000000" size="+2">Register 
+                          Here !!</font></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="center"><font color="#000000" size="+1">Rollnumber <span id="mandetory">*</span>
+                          </font>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="text" name="rollno" placeholder="ex:1111@skucet.com"/></td>
+						  <td align="center"><font color="#000000" size="+1">FullName<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="text" name="fname"/></td>
+                      </tr>
+                      <tr align="center"> 
+                       <td align="center"><font color="#000000" size="+1">Password<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="password" name="pass"/></td>
+						  <td align="center"><font color="#000000" size="+1">Re-Password<span id="mandetory">*</span></font>&nbsp;&nbsp; 
+                          <input type="password" name="repass"/></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="center"><font color="#000000" size="+1">Phonenumber<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;
+                          <input type="text" maxlength="10" name="phoneno"/></td>
+						  <td align="center"><font color="#000000" size="+1">Gender:</font>&nbsp;&nbsp;&nbsp; 
+                          <input type="radio" name="sex" value="male"> <font color="#000000" size="+1">Male</font> <br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                        &nbsp;&emsp;&emsp;   <input type="radio" name="sex" value="female"> <font color="#000000" size="+1">Female</font>  </td>
+                      </tr>
+                      
+                      <tr align="center"> 
+                        <td align="center"><font color="#000000" size="+1">Date 
+                          of Birth </font>&nbsp;&nbsp;&nbsp; <input  type="tel" name="dd" id="dd" maxlength="2" placeholder="DD" style="width:25px;"/>
+                          / 
+                          <input  type="tel" name="mm" id="mm" maxlength="2" placeholder="MM" style="width:25px;"/>
+                          / 
+                          <input type="tel" name="yyyy" id="yyyy" maxlength="4" placeholder="YYYY" style="width:55px;"/></td>
+						  <td align="center"><font color="#000000" size="+1">E-Mail<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                          <input type="text" name="email" id="email" class="span6" /></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="left" height="10"></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="center" colspan="2"><input type="submit" class="btr-red" value="SUBMIT"> 
+                          &nbsp;&nbsp;&nbsp; <input type="reset" class="btr-red"  value="RESET"></td>
+                      </tr>
+                      <tr align="center"> 
+                        <td align="left" height="40"></td>
+                      </tr>
+                    </table>
+                  </form>
+  </div>                
+</body>
+</html>

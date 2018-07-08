@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>Display file upload form to the user</TITLE>
+</HEAD>
+<BODY>
+ <form align="center" method="post"  name="productForm"  ENCTYPE="multipart/form-data" ACTION="dlwdfileupload.jsp"  onsubmit="return validate()" >
+          <table align="center" width="400" bgcolor="#FFFFFF" height="5" style="border-radius:10px;box-shadow:5px 5px 5px 5px #ccc;"  >
+            <tr> 
+              <td align="center" colspan=2   style="font-weight:bold;font-size:20pt;"> 
+                <font color="#CC3300">Image Details</font></td>
+            </tr>
+            <tr> 
+              <td align="center" colspan=2>&nbsp;</td>
+            </tr>
+			<tr> 
+              <td align="right"><b style="font-size:16px;color:blue;">filename: 
+                </b></td>
+              <td align="center"> <INPUT NAME="uname" TYPE="text">
+              <td> </tr>
+            <tr> 
+              <td align="right"><b style="font-size:16px;color:blue;">Upload: 
+                </b></td>
+              <td align="center"> <INPUT NAME="file" TYPE="file">
+              <td> </tr>
+            <tr> 
+              <td align="center" colspan=2>&nbsp;</td>
+            </tr>
+            <tr> 
+              <td></td>
+              <td> <button  type="submit" name="send" >Upload 
+                Image</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				
+				</tr>
+				
+				</table>
+        </form>
+		<div id="login_wel"> <img src="file://C:/Program Files (x86)/Apache Software Foundation/Tomcat 7.0/Tulips.jpg"  width="55%" height="60%">  </div>
+</BODY>
+</HTML>

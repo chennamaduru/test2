@@ -1,0 +1,92 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript">
+function validate()
+{
+ var ph=document.myform.phoneno.value;
+   var u=document.myform.loginid.value;
+  if(u=="")
+  {
+  alert("enter valid login id...");
+   
+  return false;
+  }
+   
+  if(ph=="")
+  {
+  alert("fill registered phone number");
+  return false;
+  }	
+	
+}
+function validate1()
+{
+var em=document.myform1.email.value;
+if(em=="")
+  {
+  alert("Enter valid Email Id...");
+   
+  return false;
+  }
+}
+</script>
+	</head>
+<BODY background="images\ooo.jpg"><div class="corner"><a href="http:/www.facebook.com" target="_blank"><img src="images\fb.png"></a>&nbsp;<a href="http:/www.twitter.com"target="_blank"><img src="images\tw.png "></a></div>
+<div id="img_1">
+   <IMG SRC="images\header.png" ></div>
+    <div id="nav1">
+		   <nav class="nav2">
+			<div class="menu">
+			<li><a href="index.html"><img src="images\home3.png">Home</a></li> 
+			<li><a href="confirm.html"><img src="images\registration.png">Registration</a></li> 
+			<li><a href="Eventgallery.html"><img src="images\gallery1.png">Eventgallery</a></li>
+			<li><a href="about.html"><img src="images\about.png">About Us</a></li>     
+		   </div>
+		   </nav> 
+	</div>
+	
+	<div class="forget_login"> 
+     <form  name="myform1"  method="post" action="forgotlogin.jsp" onSubmit="return validate1()">     
+     <table align="center" align="center" bgcolor="#FFFFFF" width="400" style="border-radius:20px;box-shadow:5px 5px 5px 5px #ccc">
+	 <tr><td align="center" colspan="2" style="font-face:arial;font-type:bold;font-size:25px;color:blue;" ><u>Enter Required Details</u></td></tr>
+	 <tr></tr>
+	 
+	<tr align="center"> 
+                        <td align="center"><font color="#000000" size="+1">EmailId<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;
+                          <input type="text" maxlength="40" name="email" placeholder="Email id.."/></td>
+                      </tr>			  
+					  
+	<tr align="center"> 
+              <td align="center"><input type="submit" value="Send LoginId" style="background-color:pink;border-radius:20px">
+             </td>
+             
+	</tr>
+   
+</table>
+</form>
+	<div class="forget_pass"> 
+     <form  name="myform"  method="post" action="forgotpassword.jsp" onSubmit="return validate()">     
+     <table align="center" align="center" bgcolor="#FFFFFF" width="400" style="border-radius:20px;box-shadow:5px 5px 5px 5px #ccc">
+	 <tr><td align="center" colspan="2" style="font-face:arial;font-type:bold;font-size:25px;color:blue;" ><u>Enter Required Details</u></td></tr>
+	 <tr></tr>
+	 <tr align="center">
+						  <td align="center" style="color:black;">LOGIN ID:<span id="mandetory">*</span>&nbsp;<input type="text" name="loginid" size="25"  placeholder=" login id.."></td>
+						    </tr>
+	  
+	<tr align="center"> 
+                        <td align="center"><font color="#000000" size="+1">Phonenumber<span id="mandetory">*</span></font>&nbsp;&nbsp;&nbsp;
+                          <input type="text" maxlength="10" name="phoneno"/></td>
+                      </tr>			  
+					  
+	<tr align="center"> 
+              <td align="center"><input type="submit" value="Send Password" style="background-color:pink;border-radius:20px">
+             </td>
+             
+	</tr>
+   
+</table>
+</form>
+</div>	
+</body>
+</html>
